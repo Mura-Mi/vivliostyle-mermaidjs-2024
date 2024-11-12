@@ -1,4 +1,7 @@
-module.exports = {
+import { VFM } from "@vivliostyle/vfm";
+import rehypeMermaid from "rehype-mermaid";
+
+export default {
   title: 'vivliostyle-mermaidjs-2024', // populated into `publication.json`, default to `title` of the first entry or `name` in `package.json`.
   author: 'Takuya "Mura-Mi" Murakami <mura.mi.nantoka@gmail.com>', // default to `author` in `package.json` or undefined.
   // language: 'ja', // default to undefined.
@@ -28,4 +31,5 @@ module.exports = {
   //   hardLineBreaks: true, // converts line breaks of VFM to <br> tags. default to 'false'.
   //   disableFormatHtml: true, // disables HTML formatting. default to 'false'.
   // },
+  documentProcessor: (config, metadata) => VFM(config, metadata).use(rehypeMermaid, {strategy: 'img-png'})
 }

@@ -7,11 +7,11 @@
   "conformsTo": "https://github.com/vivliostyle/vivliostyle-cli",
   "name": "vivliostyle-mermaidjs-2024",
   "author": "Takuya \"Mura-Mi\" Murakami <mura.mi.nantoka@gmail.com>",
-  "dateModified": "2024-11-12T14:02:13.750Z",
+  "dateModified": "2024-11-12T14:20:07.858Z",
   "readingOrder": [
     {
       "url": "manuscript.html",
-      "name": "吾輩は猫である。"
+      "name": "Vivliostyle で mermaid.js を描こう"
     }
   ],
   "resources": [],
